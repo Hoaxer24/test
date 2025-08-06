@@ -1,0 +1,22 @@
+pipeline{
+    agent any
+
+    stages {
+          stage('checkout'){
+      steps{
+          git 'https://github.com/Hoaxer24/test.git'
+        }
+    }
+
+          stage('Build'){
+      steps{
+         echo 'BUilding the project...'
+        }
+    }
+
+          stage('Test'){
+      steps{
+         echo 'Running Tests...'
+        }
+    }
+}
