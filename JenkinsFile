@@ -19,4 +19,11 @@ pipeline{
          echo 'Running Tests...'
         }
     }
+
+    stage('Deploy'){
+      steps{
+         echo 'Deploying Application...'
+            }
+        }
+    }
 }
